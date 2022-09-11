@@ -31,6 +31,7 @@ export default function handler(req, res) {
 
 	contactEmail.sendMail(mail, (error) => {
 		if (error) {
+			console.log(error);
 			res.status(200).json({ message: 'Error' })
 		} else {
 			res.status(200).json({ message: 'Message Sent' })
