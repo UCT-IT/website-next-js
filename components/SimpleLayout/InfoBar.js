@@ -14,7 +14,7 @@ import {
 	Timer
 } from '@material-ui/icons';
 
-
+import Link from 'next/link'
 
 
 function InfoBar() {
