@@ -67,7 +67,9 @@ const Featured = () => {
 							<Box>
 								<Typography className={styles.sectionTitle}>Reach Out</Typography>
 								<Typography className={styles.sectionSubtitle}>
-									Phone: +880 1714-020193
+									<Link href={'tel:+8801996399534'} passHref>
+										Phone: +880 1996-399534
+									</Link>
 								</Typography>
 
 								<Typography className={styles.sectionSubtitle}>

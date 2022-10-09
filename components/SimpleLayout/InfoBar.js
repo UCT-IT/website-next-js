@@ -18,7 +18,7 @@ import {
 
 
 function InfoBar() {
-	
+
 	const theme = useTheme();
 	const breakpoint = useMediaQuery(theme.breakpoints.up("lg"));
 
@@ -42,23 +42,27 @@ function InfoBar() {
 				justifyContent: 'center',
 			},
 			text: {
-				fontSize: breakpoint ? 16: 10,
+				fontSize: breakpoint ? 16 : 10,
 				paddingLeft: theme.spacing(1),
 				paddingRight: theme.spacing(1)
 			}
 		}
 	});
-	
+
 	const styles = useStyles();
 
 	return (
 		<Box className={styles.bar}>
 			<Box className={styles.content}>
 				<Phone />
-				<Typography className={styles.text}>Phone: +880 1714-020193</Typography>
+				<Typography className={styles.text}>
+					<Link href={'tel:+8801996399534'} passHref>
+						Phone: +880 1996-399534
+					</Link>
+				</Typography>
 			</Box>
 			{
-				breakpoint && 
+				breakpoint &&
 				<Box className={styles.content}>
 					<LocationOn />
 					<Typography className={styles.text}>
@@ -70,7 +74,7 @@ function InfoBar() {
 					</Typography>
 				</Box>
 			}
-			
+
 			<Box className={styles.content}>
 				<Timer />
 				<Typography className={styles.text}>

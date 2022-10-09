@@ -144,10 +144,12 @@ const Introduction = () => {
 
 						</Box>
 						<Typography className={styles.navigationTitle}>
-							Phone: +880 1714-020193
+							<Link href={'tel:+8801996399534'} passHref>
+								Phone: +880 1996-399534
+							</Link>
 						</Typography>
 						<Typography className={styles.navigationTitle}>
-							Email:  
+							Email:
 							<Link href={'mailto:uctibd@gmail.com'} passHref>
 								uctitbd@gmail.com
 							</Link>
